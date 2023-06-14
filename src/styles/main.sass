@@ -1,9 +1,14 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
 @import './_variables'
 @import './_mixins'
 
-*
+*, *::before, *::after
   box-sizing: border-box
   outline: none
+  margin: 0
 
 html,
 body
@@ -22,3 +27,6 @@ body
 
 code 
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+ul
+  list-style: none
